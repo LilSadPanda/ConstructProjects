@@ -145,3 +145,11 @@ jobs:
       name: "EcoQuests"
       java: 17
       readonly: true
+  EcoScrolls:
+    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoScrolls"
+      target: "bin/*"
+      name: "EcoScrolls"
+      java: 17
+      readonly: true
