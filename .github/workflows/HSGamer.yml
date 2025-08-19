@@ -1,0 +1,24 @@
+name: HSGamer
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/HSGamer.yml'
+  schedule:
+    - cron: '0 0 */3 * *'
+
+jobs: 
+  BetterForms:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/maven-build.yml@main
+    with:
+      repository: "BetterGUI-MC/BetterForms"
+      name: "BetterForms"
+      java: 17
+  ExtraStorage:
+    uses: LilSadPanda/ConstructProjects/.github/workflows/maven-build.yml@main
+    with:
+      repository: "HSGamer/ExtraStorage"
+      name: "ExtraStorage"
+      java: 17
+ 

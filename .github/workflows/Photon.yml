@@ -10,9 +10,9 @@ on:
 
 jobs:
   AntiCheatAddition:
-    uses: HSGamer/ConstructProjects/.github/workflows/maven-build.yml@main
+    uses: LilSadPanda/ConstructProjects/.github/workflows/maven-build.yml@main
     with:
       repository: "Photon-GitHub/AntiCheatAddition"
       name: "AntiCheatAddition"
-      java: 17
+      java: 21
       tasks: "clean package -DskipTests"

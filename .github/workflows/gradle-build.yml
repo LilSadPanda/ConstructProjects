@@ -62,7 +62,7 @@ jobs:
         repository: ${{ inputs.repository }}
         ref: ${{ inputs.ref }}
     - name: Set up JDK
-      uses: actions/setup-java@v4.2.1
+      uses: actions/setup-java@v4.7.1
       with:
         java-version: ${{ inputs.java }}
         distribution: ${{ inputs.distribution }}
@@ -71,7 +71,7 @@ jobs:
       run: |
         ${{ inputs.commands }}
     - name: Build with Gradle
-      uses: burrunan/gradle-cache-action@v1
+      uses: burrunan/gradle-cache-action@v2
       with:
         job-id: ${{ github.workflow	}}-${{ inputs.cache }}
         arguments: ${{ inputs.tasks }}
